@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let eded1=parseInt(prompt("1 ci ededi daxil edin"))
+        let eded2=parseInt(prompt("2 ci ededi daxil edin"))
+        let hesab=prompt("Hesablama əməliyyatını daxil edin(+,-,*,/)")
+
+        function toplama(eded1,eded2){
+            return eded1+eded2
+        }
+        function cixma(eded1,eded2){
+            return eded1-eded2
+        }
+        function vurma(eded1,eded2){
+            return eded1*eded2
+        }
+
+        function bolme(eded1,eded2){
+            return eded1/eded2
+        }
+
+
+        switch(hesab){
+            case "+":
+            alert(toplama(eded1,eded2))
+            break;
+            case "-":
+            alert(cixma(eded1,eded2))
+            break;
+            case "*":
+            alert(vurma(eded1,eded2))
+            break;
+            case "/":
+            alert(bolme(eded1,eded2))
+            break;
+            default:
+            alert("Əməliyyati doğru daxil edin!")
+            break;
+        }
+
+        
+    </script>
+</body>
+</html>

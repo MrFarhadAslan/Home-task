@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div id="1" style="width: 200px;height:200px;background-color:blue">click to change background</div>
+    <div id="2" style="width: 200px;height:200px;background-color:red  ">click to change background</div>
+    <div id="3" style="width: 200px;height:200px;background-color:green">click to change background</div>
+
+    <script>
+        document.getElementById("1").addEventListener("click", function () {
+            document.getElementById("body").style.backgroundColor = "blue";
+        })
+        document.getElementById("2").addEventListener("click", function () {
+            document.getElementById("body").style.backgroundColor = "red";
+        })
+        document.getElementById("3").addEventListener("click", function () {
+            document.getElementById("body").style.backgroundColor = "green";
+        })
+    </script>
+</body>
+
+</html>
